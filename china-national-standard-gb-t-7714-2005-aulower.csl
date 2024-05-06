@@ -49,9 +49,7 @@
       <term name="page-range-delimiter">-</term>
     </terms>
   </locale>
-  <macro name="accessed-date">
-    <date variable="accessed" form="numeric" prefix="[" suffix="]"/>
-  </macro>
+
   <macro name="author">
     <names variable="author">
       <name>
@@ -315,16 +313,7 @@
       </choose>
     </group>
   </macro>
-  <macro name="url-doi">
-    <choose>
-      <if variable="URL">
-        <text variable="URL"/>
-      </if>
-      <else>
-        <text variable="DOI" prefix="https://doi.org/"/>
-      </else>
-    </choose>
-  </macro>
+ 
   <macro name="year-volume-issue">
     <group>
       <group delimiter=", ">
